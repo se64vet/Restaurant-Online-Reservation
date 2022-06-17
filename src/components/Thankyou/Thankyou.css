@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 2em;
+    text-align: start;
+}
+.msg{
+    font-style: italic;
+}
+.author{
+    font-weight: 600;
+}

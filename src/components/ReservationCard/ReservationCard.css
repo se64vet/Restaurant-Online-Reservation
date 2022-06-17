@@ -1,0 +1,39 @@
+label{
+    font-weight: 700;
+}
+.title{
+    color: lightcoral;
+}
+.form__element {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1em 0em;
+    font-size: 1em;
+}
+.inputText{
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 1em;
+    height: 2em;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.radio__block{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.submitBtn{
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-weight: 700;
+    background-color: lightcoral;
+    box-shadow: 8px 8px 0px lightgray;
+}

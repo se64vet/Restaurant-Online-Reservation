@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import ReservationCard from './components/ReservationCard/ReservationCard';
+import Thankyou from './components/Thankyou/Thankyou';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router >
+      <div className="App">
+        <img src={process.env.PUBLIC_URL + './assets/bg1.webp'} alt="Cover Img" className="headImg" />
+      
+      <Switch>
+        <Route exact path="/">
+          <div>
+            <ReservationCard />
+          </div>
+        </Route>
+
+        <Route exact path="/thankyou">
+          <div>
+          <Thankyou />
+          </div>
+        </Route>
+
+      </Switch>
+      </div>
+    </Router>
   );
 }
 
