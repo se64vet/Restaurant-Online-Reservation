@@ -13,7 +13,7 @@ function App() {
   return (
     <Router >
       <div className="App">
-        <img src={process.env.PUBLIC_URL + './assets/bg1.webp'} alt="Cover Img" className="headImg" />
+        <img src={process.env.PUBLIC_URL + './assets/4.jpg'} alt="Cover Img" className="headImg" />
       
       <Switch>
         <Route exact path="/">

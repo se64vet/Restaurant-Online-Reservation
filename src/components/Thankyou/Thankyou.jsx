@@ -4,16 +4,22 @@ import './Thankyou.css'
 const Thankyou = () => {
     return (
         <div className="wrapper">
-            <h2 className="title">Vielen Dank, dass Sie bei uns reserviert haben :)</h2>
-            <p className="msg">Das gibt uns Zeit, uns darauf vorzubereiten, Ihnen zu dienen. <br/><br />
-            Sie erhalten in wenigen Sekunden eine Reservierungsbestätigungs-E-Mail. <br/><br />
-            Wir freuen uns darauf, Sie im Goc Pho Jena zu bedienen.</p>
+            <div>
+                <h2 className="title">Thank you for your reservation</h2>
+                <p className="msg">This give us time for prepare all the best for you.<br/>
+                You will receive a confirmation email soon. <br/>
+                We're happy and waiting to serve you.</p>
 
-            <p className="author">
-            Schöne Grüße, <br/> <br />
+                <p className="author">
+                Sincerely, <br/> <br />
 
-            GocPho-Team
-            </p>
+                Blues Team
+                </p>
+            </div>
+            <div className='backBtn'>
+                <a  href="#">Click to back to main website</a>
+            </div>
+
         </div>
     )
 }

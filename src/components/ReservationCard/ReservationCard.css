@@ -1,23 +1,35 @@
 label{
-    font-weight: 700;
+    font-weight: 600;
+}
+.card__wrapper{
+    padding: 1em;
+    margin-top: 1em;
+    box-shadow: 0 0 0 1px white,
+                0 0 0 5px black,
+                0 0 0 8px white;
 }
 .title{
-    color: lightcoral;
+    color: white;
+    font-style: italic;
 }
 .form__element {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 0.5em;
     margin: 1em 0em;
     font-size: 1em;
 }
 .inputText{
-    border: 1px solid lightgray;
-    background-color: white;
-    border-radius: 1em;
+    border: 1px solid white;
     height: 2em;
     padding: 0 1em;
     width: 100%;
+    box-sizing: border-box;
+}
+input, select {
+    color-scheme: dark;
 }
 
 .radio__block{
@@ -29,11 +41,15 @@ label{
 .submitBtn{
     margin-top: 1em;
     padding: 0.5em 1em;
+    width: 100%;
     font-size: 1.4em;
-    border: none;
-    border-radius: 1em;
+    border: 2px solid white;
     color: white;
     font-weight: 700;
-    background-color: lightcoral;
-    box-shadow: 8px 8px 0px lightgray;
+    background-color: transparent;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    background-color: white;
+    color: black;
 }

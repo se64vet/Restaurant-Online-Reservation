@@ -41,40 +41,41 @@ const ReservationCard = () => {
     
     return (
         <div className='card__wrapper'>
-            <h2 className="title">Genießt eure schöne zeit <br/> bei uns</h2>
+            <h2 className="title">Enjoy your wonderful time <br/> with us</h2>
             
 
             <form action="" id="reservierung" onSubmit={onSubmit}>
                 <div className='form__element'>
-                    <label htmlFor="name">Ihre Name</label>
+                    <label htmlFor="name">Your name</label>
                     <input className='inputText' type="text" name='name'  onChange={handleChange} value={infos.name} required/>
                 </div>
                 <div className='form__element'>
-                    <label htmlFor="gaste">Personenzahl</label>
+                    <label htmlFor="gaste">Number of people</label>
                     <input className='inputText' type="number" name='personenzahl'  onChange={handleChange} value={infos.personenzahl} />
                 </div>
                 
                 <div className='form__element'>
-                    <label htmlFor="sitzplatz">Sitzplatz</label>
+                    <label htmlFor="sitzplatz">Where do you want to be seated?</label>
                     <select className='inputText' name="sitzplatz" id="sitzplatz" onChange={handleChange} value={infos.sitzplatz}>
-                        <option value="Garten">Garten</option>
-                        <option value="im Hause">im Hause</option>
+                        <option value="Garten">Garden</option>
+                        <option value="im Hause">Main Lounge</option>
+                        <option value="im Hause">At the Bar</option>
                     </select>
                 </div>
                 <div className='form__element'>
-                    <label htmlFor="datum">Datum</label>
+                    <label htmlFor="datum">Date</label>
                     <input className='inputText' type="date" name="datum"  onChange={handleChange} value={infos.datum} required/>
                 </div>
                 <div className='form__element'>
-                    <label htmlFor="zeit">Zeit</label>
+                    <label htmlFor="zeit">Time</label>
                     <input className='inputText' type="time"  name="zeit"  onChange={handleChange} value={infos.zeit} required/>
                 </div>
                 <div className='form__element'>
-                    <label htmlFor="zeit">Ihre Email</label>
+                    <label htmlFor="zeit">Your Email</label>
                     <input className='inputText' type="email"  name="reply_to"  onChange={handleChange} value={infos.reply_to} required/>
                 </div>
 
-                <button className='submitBtn' type='submit'>Reservieren</button>
+                <button className='submitBtn' type='submit'>Submit</button>
             </form>
 
             
