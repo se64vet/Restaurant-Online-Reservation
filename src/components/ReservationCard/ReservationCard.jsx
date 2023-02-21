@@ -2,14 +2,13 @@ import React, {useState} from 'react'
 import './ReservationCard.css'
 import { useHistory } from 'react-router-dom'
 
-import {EmailJSResponseStatus, init} from 'emailjs-com'
+import { init} from 'emailjs-com'
 import emailjs from 'emailjs-com'
 
 init(process.env.REACT_APP_EMAILJS_ID);
 
 const ReservationCard = () => {
     let history = useHistory()
-    const [redirect, setRedirect] = useState(false)
     const [infos, setInfos] = useState({
         personenzahl: " ",
         sitzplatz: "Garten",

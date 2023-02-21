@@ -17,7 +17,7 @@ const Thankyou = () => {
                 </p>
             </div>
             <div className='backBtn'>
-                <a  href="#">Click to back to main website</a>
+                <a  href="/">Click to back to main website</a>
             </div>
 
         </div>
